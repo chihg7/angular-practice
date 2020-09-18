@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-app.use(express.static(__dirname + '/dist/h7-angular-practice'));
+app.use(express.static(__dirname + '/dist/practice'));
 app.get('/*', function(req,res) {
 res.sendFile(path.join(__dirname+
-'/dist/h7-angular-practice/index.html'));});
+'/dist/practice/index.html'));});
 app.listen(process.env.PORT || 8080);
